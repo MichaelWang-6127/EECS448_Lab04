@@ -26,7 +26,7 @@
 	echo "<br>" .$a. "</br>".PHP_EOL;
 	$b = "You answered: " . $answer2;
 	echo "<br>" .$b. "</br>".PHP_EOL;
-	$c = "Correct answer: Ottowa";
+	$c = "Correct answer: Ottawa";
 	echo "<br>" .$c. "</br>".PHP_EOL;
 
 	$a = "Question 3: What is the capital of China?";
@@ -51,7 +51,7 @@
 	echo "<br>" .$c. "</br>".PHP_EOL;
 
 	$a = "Madrid";
-	$b = "Ottowa";
+	$b = "Ottawa";
 	$c = "Beijing";
 	$d = "Canberra";
 	$e = "London";
