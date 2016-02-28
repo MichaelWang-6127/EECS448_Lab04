@@ -1,0 +1,64 @@
+
+<html>
+
+  <head>
+  	<link href= "style.css"
+            rel= "stylesheet"
+            type= "text/css"/>
+        <script type="text/javascript" src="formChecker.js"></script>
+
+    <title></title>
+    <meta content="">
+    <style></style>
+  </head>
+  
+  <body>
+	<form name="myForm" onsubmit="return submit();" action="customerBackend.php">
+
+	<p> Username</p>
+    <input type="text" name="username" id="uName">
+    <p> Password</p>
+    <input type="password" name="password" id="PW">
+    <br>
+    <br>
+
+	 <table style ="width:100%" border = "5">
+		<tr>
+		    <th></th>
+		    <th colspan="1">Quantity</th>
+		    <th>Cost per item</th>
+	  	</tr>
+
+	  	<tr>
+		    <td>small box</td>
+		    <td> <input type="text" name="q1" id="q1"></td>
+		    <td> $2.00</td>
+	  	</tr>
+
+	  	<tr>
+		    <td>medium box</td>
+		    <td> <input type="text" name="q2" id="q2"></td>
+		    <td> $4.00</td>
+	  	</tr>
+
+		<tr>
+		    <td>big box</td>
+		    <td> <input type="text" name="q3" id="q3"></td>
+		    <td> $8.00</td>
+	  	</tr>
+	  	<table>
+	  	<br>
+
+		<input type="radio" name="ship" id="a1" value="5.00"> standard shipping $5.00 (4-7) buisness days<br>
+		<input type="radio" name="ship" id="a2" value="10.00"> express shipping $10.00 (2-3) buisness days<br>
+		<input type="radio" name="ship" id="a3" value="15.00"> overnight shipping $15.00 (1-2) buisness days<br>
+	
+	<br>
+	<input type="submit" value="submit" onClick="return validate()"/>
+	
+	</form>
+
+
+  </body>
+
+</html>
