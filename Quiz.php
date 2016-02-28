@@ -50,30 +50,37 @@
 	$c = "Correct answer: London";
 	echo "<br>" .$c. "</br>".PHP_EOL;
 
-	if($answer1 = "Madrid")
+	$a = "Madrid";
+	$b = "Ottowa";
+	$c = "Beijing";
+	$d = "Canberra";
+	$e = "London";
+
+	if(strcmp($answer1, $a) === 0)
 	{
 		$score = $score + 1;
 	}
 	
-	if($answer2 = "Ottowa")
+	if(strcmp($answer2, $b) === 0)
 	{
 		$score = $score + 1;
 	}
 	
-	if($answer3 = "Beijing")
+	if(strcmp($answer3, $c) === 0)
 	{
 		$score = $score + 1;
 	}
 	
-	if($answer4 = "Canberra")
+	if(strcmp($answer4, $d) === 0)
 	{
 		$score = $score + 1;
 	}
 	
-	if($answer5 = "London")
+	if(strcmp($answer5, $e) === 0)
 	{
 		$score = $score + 1;
 	}
+
 	$d = "You got ".$score." questions right!";
 	echo "<br>".$d."</br>";
 	$score = $score * 20;
