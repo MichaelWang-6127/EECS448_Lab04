@@ -1,6 +1,6 @@
 function validate()
 {
-	var uname = document.getElementById("uName");
+	var uname = document.getElementById("uName").value;
 	var unAddress = uname.indexOf('@domain.com');
 	var pword = document.getElementById("PW").value;
 	var item1 = document.getElementById("q1").value;
@@ -13,7 +13,7 @@ function validate()
 		return false;
 	}
 
-	if(!(unAddress == 1))
+	if(!(unAddress > -1))
 	{
 		alert("Invalid username! Must end in name@domain.com!");
 		return false;
