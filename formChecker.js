@@ -1,6 +1,6 @@
 function validate()
 {
-	var uname = document.getElementById("uName").value;
+	var uname = document.getElementById("uName");
 	var unAddress = uname.indexOf('@domain.com');
 	var pword = document.getElementById("PW").value;
 	var item1 = document.getElementById("q1").value;
